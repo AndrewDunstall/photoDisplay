@@ -1,0 +1,62 @@
+<?php
+// This page begins the HTML header for the site.
+ob_start();
+//------------------------------------------------------------------------------------
+//A way to avoid starting the session twice, simpler than the session checking class above:
+if (!isset ($_SESSION)) session_start();
+//------------------------------------------------------------------------------------
+
+// Check for a $page_title value.
+if (!isset($page_title)) {
+	$page_title = 'photoDisplay';
+}
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<title><?php echo $page_title; ?></title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" type="text/css" href="includes/styles.css" />
+
+
+<SCRIPT LANGUAGE="javascript">
+var newwindow;
+function poptastic(url)
+{
+	newwindow=window.open(url,'name','height=600,width=850');
+	if (window.focus) {newwindow.focus()}
+}
+</SCRIPT>
+
+
+
+
+
+</head>
+<body>
+
+<div id="wrapper">
+
+<div id="header">
+<img src="images/topvault.jpg" alt="VaultDigital" height="108" width="900" />
+<div id="header-bottom">
+        
+<ul>
+<li><a href="index.php">home</a>&nbsp;&nbsp;</li>
+<li><a href="photoboothlogon.php">photobooth</a>&nbsp;&nbsp;</li>
+<li><a href="selectionlogon.php">selection</a>&nbsp;&nbsp;</li>
+</ul>
+
+
+</div> <!-- header-bottom -->
+</div> <!-- header -->
+
+<br />
+<br />
+<br />
+<br />
+
+
+<div id="main">
+
+
