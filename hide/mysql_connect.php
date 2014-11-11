@@ -11,9 +11,9 @@
 //-----------------------------------------------
 
 DEFINE ('DB_USER', 'root');
-DEFINE ('DB_PASSWORD', 'ticktock');
+DEFINE ('DB_PASSWORD', 'user');
 DEFINE ('DB_HOST', 'localhost');
-DEFINE ('DB_NAME', 'vault_db');
+DEFINE ('DB_NAME', 'photodisplay_db');
 
 
 
